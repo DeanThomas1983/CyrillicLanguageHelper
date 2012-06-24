@@ -35,8 +35,6 @@ public class LanguageList extends ArrayList {
             e.printStackTrace();
         }
         
-        System.out.println("Search directory is: " + inputDirectory);
-        
         loadLanguageFiles();
     }
     
@@ -75,6 +73,8 @@ public class LanguageList extends ArrayList {
      */
     private File[] XMLFileFinder()
     {
+        System.out.println("Loading language files in " + inputDirectory);
+        
         File searchDirectory = new File(inputDirectory);
         
         return searchDirectory.listFiles(new FilenameFilter() {
@@ -82,7 +82,8 @@ public class LanguageList extends ArrayList {
             @Override
             public boolean accept(File dir, String name) {
                 //  TODO: check for non-language XML files
-                return name.endsWith(".xml");
+                //  HACK: better way to ignore build.xml than this
+                return (name.endsWith(".xml") && (!name.equals("build.xml")));
             }
         } );
     }
