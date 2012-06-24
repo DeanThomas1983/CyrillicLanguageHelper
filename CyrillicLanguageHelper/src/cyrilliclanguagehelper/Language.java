@@ -35,5 +35,7 @@ public class Language extends ArrayList {
         this();
      
         this.title = fileName;
+        
+        System.out.println(title);
     }
 }
