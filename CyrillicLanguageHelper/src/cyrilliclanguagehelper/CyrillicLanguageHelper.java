@@ -12,10 +12,14 @@ package cyrilliclanguagehelper;
  */
 public class CyrillicLanguageHelper {
 
+    //  MVC variables
+    private static DataModel dataModel;
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        dataModel = new DataModel();
     }
 }
