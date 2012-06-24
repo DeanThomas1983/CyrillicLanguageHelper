@@ -9,13 +9,15 @@ package cyrilliclanguagehelper;
  * @author Dean Thomas
  */
 public class DataModel {
+    private LanguageList languageList;
+    
     /**
      * Create a new DataModel
-     * 
-     * Create a new DataModel to hold the system data
      */
     public DataModel()
     {
         System.out.println("New DataModel created");
+        
+        languageList = new LanguageList();
     }
 }
