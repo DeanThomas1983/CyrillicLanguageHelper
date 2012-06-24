@@ -61,7 +61,7 @@ public class LanguageList extends ArrayList {
         
         for (int i = 0; i < fileList.length; i++)
         {
-            Language newLanguage = new Language(fileList[i].getName());
+            Language newLanguage = new Language(fileList[i]);
             
             this.add(newLanguage);
         }
