@@ -4,7 +4,6 @@ To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
 
-
 <root>
     <DaysOfWeek>
         <Monday>
@@ -64,5 +63,102 @@ and open the template in the editor.
             </Phonetic>
         </Sunday>
     </DaysOfWeek>
-    
+    <MonthsOfYear>
+        <January>
+            <Bulgarian>
+                Януари
+            </Bulgarian>
+            <Phonetic>
+                Yanuari
+            </Phonetic>    
+        </January>
+        <February>
+            <Bulgarian>
+                Февруари
+            </Bulgarian>
+            <Phonetic>
+                Fevruari
+            </Phonetic>
+        </February>
+        <March>
+            <Bulgarian>
+                Март
+            </Bulgarian>
+            <Phonetic>
+                Mart
+            </Phonetic>
+        </March>
+        <April>
+            <Bulgarian>
+                Аврил
+            </Bulgarian>
+            <Phonetic>
+                Avril
+            </Phonetic>
+        </April>
+        <May>
+            <Bulgarian>
+                Май
+            </Bulgarian>
+            <Phonetic>
+                Mai
+            </Phonetic>
+        </May>
+        <June>
+            <Bulgarian>
+                Юни
+            </Bulgarian>
+            <Phonetic>
+                Juni
+            </Phonetic>
+        </June>
+        <July>
+            <Bulgarian>
+                Юли
+            </Bulgarian>
+            <Phonetic>
+                Juli
+            </Phonetic>
+        </July>
+        <August>
+            <Bulgarian>
+                Август
+            </Bulgarian>
+            <Phonetic>
+                Avgust
+            </Phonetic>
+        </August>
+        <September>
+            <Bulgarian>
+                Септември
+            </Bulgarian>
+            <Phonetic>
+                Septemvri
+            </Phonetic>
+        </September>
+        <October>
+            <Bulgarian>
+                Октомври
+            </Bulgarian>
+            <Phonetic>
+                Oktomvri
+            </Phonetic>
+        </October>
+        <November>
+            <Bulgarian>
+                Ноември
+            </Bulgarian>
+            <Phonetic>
+                Noemvri
+            </Phonetic>
+        </November>
+        <December>
+            <Bulgarian>
+                Декември
+            </Bulgarian>
+            <Phonetic>
+                Dekemvri
+            </Phonetic>
+        </December>
+    </MonthsOfYear>
 </root>
