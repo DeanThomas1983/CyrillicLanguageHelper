@@ -21,6 +21,7 @@ public class XMLParser extends DefaultHandler {
     
     private Boolean data;
     private Boolean wordCollection;
+    private String tmp;
     
     /**
      * Default constructor
@@ -64,6 +65,12 @@ public class XMLParser extends DefaultHandler {
     }
     
     @Override
+    public void characters(char [] ac, int i, int j) throws SAXException
+    {
+        tmp = new String(ac, i, j);
+    }
+    
+    @Override
     public void startElement(String s, 
             String s1, 
             String elementName,
@@ -76,10 +83,13 @@ public class XMLParser extends DefaultHandler {
             data = true;
         }
         
-        if (elementName.equals("WordCollection"))
+        if (elementName.equalsIgnoreCase("WordCollection"))
         {
             wordCollection = true;
+            
+            System.out.println("Word collection: " + attributes.getValue("title"));
         }
+        
     }
     
     @Override
