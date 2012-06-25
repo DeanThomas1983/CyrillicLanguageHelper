@@ -6,6 +6,7 @@ package cyrilliclanguagehelper;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.jar.Attributes;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -26,9 +27,9 @@ public class Language extends ArrayList {
      */
     public Language()
     {
-        xmlParser = new XMLParser();
-        
         System.out.println("New language object created");
+        
+        xmlParser = new XMLParser();
     }
     
     /** Load a language definition from an XML document
@@ -45,5 +46,6 @@ public class Language extends ArrayList {
         
         xmlParser.parseXMLFile(fileName);
     }
+    
     
 }
