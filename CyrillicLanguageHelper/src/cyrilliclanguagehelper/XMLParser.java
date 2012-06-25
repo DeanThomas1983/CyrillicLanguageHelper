@@ -60,4 +60,12 @@ public class XMLParser extends DefaultHandler {
     {
         System.out.println("Found new element: " + elementName);
     }
+    
+    @Override
+    public void endElement(String s,
+        String s1,
+        String elementName)
+    {
+        System.out.println("End of element: " + elementName);
+    }
 }
