@@ -18,18 +18,23 @@ import org.xml.sax.helpers.DefaultHandler;
  * @author Dean Thomas
  */
 public class XMLParser extends DefaultHandler {
-    
+    private Language language;
     private Boolean data;
-    private Boolean wordCollection;
+    //private Boolean wordCollection;
     private String tmp;
-    
+    private Boolean english;
+    private Boolean word;
+    private boolean bulgarian;
+    private boolean phonetic;
+    private WordCollection wordCollection;
     /**
      * Default constructor
      */
-    public XMLParser()
+    public XMLParser(Language language)
     {
         System.out.println("Created XML parser");
         
+        this.language = language;
     }
     
     /**
@@ -61,13 +66,16 @@ public class XMLParser extends DefaultHandler {
         System.out.println("Starting document");
         
         data = false;
-        wordCollection = false;
+        //wordCollection = false;
+        word = false;
+        english = false;
     }
     
     @Override
     public void characters(char [] ac, int i, int j) throws SAXException
     {
-        tmp = new String(ac, i, j);
+        //if (data && wordCollection && word)
+        //    tmp = new String(ac, i, j);
     }
     
     @Override
@@ -76,20 +84,43 @@ public class XMLParser extends DefaultHandler {
             String elementName,
             Attributes attributes) throws SAXException
     {
-        System.out.println("Found new element: " + elementName);
+        //System.out.println("Found new element: " + elementName);
         
-        if (elementName.equals("data"))
+        if (elementName.equalsIgnoreCase("data"))
         {
             data = true;
         }
         
         if (elementName.equalsIgnoreCase("WordCollection"))
         {
-            wordCollection = true;
+            //wordCollection = true;
             
-            System.out.println("Word collection: " + attributes.getValue("title"));
+            //System.out.println("Word collection: " + attributes.getValue("title"));
+            
+            wordCollection = new WordCollection(attributes.getValue("title"));
         }
         
+        if (elementName.equalsIgnoreCase("Word"))
+        {
+            word = true;
+            
+            System.out.println("Found new word");
+        }
+        
+        if (elementName.equalsIgnoreCase("English"))
+        {
+            english = true;
+        }
+        
+        if (elementName.equalsIgnoreCase("Bulgarian"))
+        {
+            bulgarian = true;
+        }
+        
+        if (elementName.equalsIgnoreCase("Phonetic"))
+        {
+            phonetic = true;
+        }
     }
     
     @Override
@@ -99,6 +130,8 @@ public class XMLParser extends DefaultHandler {
     {
         System.out.println("End of element: " + elementName);
         
+        System.out.println(tmp);
+        
         if (elementName.equals("data"))
         {
             data = false;
@@ -106,7 +139,8 @@ public class XMLParser extends DefaultHandler {
         
         if (elementName.equals("WordCollection"))
         {
-            wordCollection = false;
+            this.language.getWordCollections().add(wordCollection);
+            //wordCollection = false;
         }
     }
 }

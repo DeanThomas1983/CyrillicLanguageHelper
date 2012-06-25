@@ -30,7 +30,7 @@ public class Language extends ArrayList {
     {
         System.out.println("New language object created");
         
-        xmlParser = new XMLParser();
+        xmlParser = new XMLParser(this);
         wordCollections = new ArrayList<>();
     }
     
@@ -47,6 +47,20 @@ public class Language extends ArrayList {
         System.out.println(this.fileName.getName());
         
         xmlParser.parseXMLFile(fileName);
+    }
+
+    /**
+     * @return the wordCollections
+     */
+    public ArrayList<WordCollection> getWordCollections() {
+        return wordCollections;
+    }
+
+    /**
+     * @param wordCollections the wordCollections to set
+     */
+    public void setWordCollections(ArrayList<WordCollection> wordCollections) {
+        this.wordCollections = wordCollections;
     }
     
     

@@ -13,11 +13,15 @@ import java.util.ArrayList;
  * @author Dean Thomas
  */
 public class WordCollection extends ArrayList {
+    private String title;
+    
     /**
      * Default constructor
      */
-    public WordCollection()
+    public WordCollection(String title)
     {
-        System.err.println("New word collection created");
+        System.out.println("New word collection created");
+        
+        this.title = title;
     }
 }
