@@ -28,7 +28,9 @@ public class LanguageList extends ArrayList {
         File workingDirectory = new File(".");  
         try
         {
-            this.inputDirectory = workingDirectory.getCanonicalPath() + "\\";
+            this.inputDirectory = workingDirectory.getCanonicalPath();
+            
+            this.inputDirectory += "\\src\\";
         }
         catch (Exception e)
         {
