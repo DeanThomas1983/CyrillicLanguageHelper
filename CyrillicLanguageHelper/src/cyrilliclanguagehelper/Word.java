@@ -14,6 +14,9 @@ public class Word {
     private String bulgarian;
     private String phonetic;
     
+    /**
+     * Dump the entire contents of the object to the console
+     */
     public void dumpToConsole()
     {
         System.out.println(english
@@ -23,48 +26,57 @@ public class Word {
                 + phonetic);
     }
     
+    /**
+     * Default constructor
+     */
     public Word()
     {
         System.out.println("New word created");
     }
 
     /**
-     * @return the english
+     * Return the English definition of the word
+     * @return String; the word in English
      */
     public String getEnglish() {
         return english;
     }
 
     /**
-     * @param english the english to set
+     * Set the English definition of the word
+     * @param english the definition to set
      */
     public void setEnglish(String english) {
         this.english = english;
     }
 
     /**
-     * @return the bulgarian
+     * Return the Bulgarian definition of the word
+     * @return String; the word in Bulgarian
      */
     public String getBulgarian() {
         return bulgarian;
     }
 
     /**
-     * @param bulgarian the bulgarian to set
+     * Set the Bulgarian definition of the word
+     * @param bulgarian the definition to set
      */
     public void setBulgarian(String bulgarian) {
         this.bulgarian = bulgarian;
     }
 
     /**
-     * @return the phonetic
+     * Return the phonetic definition of the word
+     * @return String; the word as its phonetic definition
      */
     public String getPhonetic() {
         return phonetic;
     }
 
     /**
-     * @param phonetic the phonetic to set
+     * Set the phonetic definition of the word
+     * @param phonetic the definition to set
      */
     public void setPhonetic(String phonetic) {
         this.phonetic = phonetic;

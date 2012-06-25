@@ -20,13 +20,10 @@ import org.xml.sax.helpers.DefaultHandler;
 public class XMLParser extends DefaultHandler {
     private Language language;
     private Boolean data;
-    //private Boolean wordCollection;
-    private String tmp;
-    //private Boolean english;
+    private String dataString;
     private Word word;
-    //private boolean bulgarian;
-    //private boolean phonetic;
     private WordCollection wordCollection;
+    
     /**
      * Default constructor
      */
@@ -60,22 +57,30 @@ public class XMLParser extends DefaultHandler {
         }
     }
     
+    /**
+     * Start parsing the document
+     */
     @Override
     public void startDocument()
     {
         System.out.println("Starting document");
         
         data = false;
-        //wordCollection = false;
-        //word = false;
-        //english = false;
     }
     
+    /**
+     * Parser has detected characters
+     * @param characters the characters received
+     * @param start the start position of the characters
+     * @param length the length of the character string
+     * @throws SAXException 
+     */
     @Override
-    public void characters(char [] ac, int i, int j) throws SAXException
+    public void characters(char [] characters, 
+        int start, 
+        int length) throws SAXException
     {
-        //if (data && wordCollection && word)
-            tmp = new String(ac, i, j);
+        dataString = new String(characters, start, length);
     }
     
     @Override
@@ -84,8 +89,6 @@ public class XMLParser extends DefaultHandler {
             String elementName,
             Attributes attributes) throws SAXException
     {
-        //System.out.println("Found new element: " + elementName);
-        
         if (elementName.equalsIgnoreCase("data"))
         {
             data = true;
@@ -93,31 +96,12 @@ public class XMLParser extends DefaultHandler {
         
         if (elementName.equalsIgnoreCase("WordCollection"))
         {
-            //wordCollection = true;
-            
-            //System.out.println("Word collection: " + attributes.getValue("title"));
-            
             wordCollection = new WordCollection(attributes.getValue("title"));
         }
         
         if (elementName.equalsIgnoreCase("Word"))
         {
             word = new Word();
-        }
-        
-        if (elementName.equalsIgnoreCase("English"))
-        {
-            //english = true;
-        }
-        
-        if (elementName.equalsIgnoreCase("Bulgarian"))
-        {
-            //bulgarian = true;
-        }
-        
-        if (elementName.equalsIgnoreCase("Phonetic"))
-        {
-            //phonetic = true;
         }
     }
     
@@ -126,10 +110,6 @@ public class XMLParser extends DefaultHandler {
         String s1,
         String elementName)
     {
-        //System.out.println("End of element: " + elementName);
-        
-        //System.out.println(tmp);
-        
         if (elementName.equalsIgnoreCase("data"))
         {
             data = false;
@@ -138,7 +118,6 @@ public class XMLParser extends DefaultHandler {
         if (elementName.equalsIgnoreCase("WordCollection"))
         {
             this.language.add(wordCollection);
-            //wordCollection = false;
         }
         
         if (elementName.equalsIgnoreCase("Word"))
@@ -148,17 +127,17 @@ public class XMLParser extends DefaultHandler {
         
         if (elementName.equalsIgnoreCase("English"))
         {
-            word.setEnglish(tmp);
+            word.setEnglish(dataString);
         }
         
         if (elementName.equalsIgnoreCase("Bulgarian"))
         {
-            word.setBulgarian(tmp);
+            word.setBulgarian(dataString);
         }
         
         if (elementName.equalsIgnoreCase("Phonetic"))
         {
-            word.setPhonetic(tmp);
+            word.setPhonetic(dataString);
         }
     }
 }

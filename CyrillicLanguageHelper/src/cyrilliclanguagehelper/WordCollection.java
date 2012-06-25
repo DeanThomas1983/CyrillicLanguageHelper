@@ -25,6 +25,9 @@ public class WordCollection extends ArrayList<Word> {
         this.title = title;
     }
     
+    /**
+     * Dump the entire contents of the object to the console
+     */
     public void dumpToConsole()
     {
         System.out.println("Word collection dump: " + title);

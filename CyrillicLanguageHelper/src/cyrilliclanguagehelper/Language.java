@@ -6,11 +6,6 @@ package cyrilliclanguagehelper;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.jar.Attributes;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-import org.xml.sax.SAXException;
 
 /**
  * @class Language
@@ -47,6 +42,9 @@ public class Language extends ArrayList<WordCollection> {
         xmlParser.parseXMLFile(fileName);
     }
     
+    /**
+     * Dump the entire contents of the object to the console
+     */
     public void dumpToConsole()
     {
         System.out.println("Language dump");

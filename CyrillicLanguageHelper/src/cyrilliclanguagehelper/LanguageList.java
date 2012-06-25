@@ -16,7 +16,10 @@ import java.util.ArrayList;
 public class LanguageList extends ArrayList<Language> {
     private String inputDirectory;
     
-    public void dumpToConsole()
+    /**
+     * Dumps entire contents of the object to the console
+     */
+    private void dumpToConsole()
     {
         for (Language language : this)
         {
@@ -47,7 +50,7 @@ public class LanguageList extends ArrayList<Language> {
         
         loadLanguageFiles();
         
-        this.dumpToConsole();
+        dumpToConsole();
     }
     
     /**
