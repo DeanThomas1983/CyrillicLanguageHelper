@@ -19,6 +19,7 @@ import org.xml.sax.SAXException;
 public class Language extends ArrayList {
     private File fileName;
     private XMLParser xmlParser;
+    private ArrayList<WordCollection> wordCollections;
     
     /**
      * Default constructor
@@ -30,6 +31,7 @@ public class Language extends ArrayList {
         System.out.println("New language object created");
         
         xmlParser = new XMLParser();
+        wordCollections = new ArrayList<>();
     }
     
     /** Load a language definition from an XML document

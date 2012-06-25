@@ -57,6 +57,8 @@ public class XMLParser extends DefaultHandler {
     @Override
     public void startDocument()
     {
+        System.out.println("Starting document");
+        
         data = false;
         wordCollection = false;
     }
