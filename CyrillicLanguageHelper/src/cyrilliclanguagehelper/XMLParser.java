@@ -139,7 +139,7 @@ public class XMLParser extends DefaultHandler {
         
         if (elementName.equals("WordCollection"))
         {
-            this.language.getWordCollections().add(wordCollection);
+            this.language.add(wordCollection);
             //wordCollection = false;
         }
     }

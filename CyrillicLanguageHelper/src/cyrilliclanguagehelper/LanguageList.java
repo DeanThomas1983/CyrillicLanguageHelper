@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * @author dean
  * @decription Holds a list of implemented languages
  */
-public class LanguageList extends ArrayList {
+public class LanguageList extends ArrayList<Language> {
     private String inputDirectory;
     
     /**

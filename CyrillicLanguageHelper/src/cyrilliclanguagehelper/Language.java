@@ -16,10 +16,9 @@ import org.xml.sax.SAXException;
  * @class Language
  * @author Dean Thomas
  */
-public class Language extends ArrayList {
+public class Language extends ArrayList<WordCollection> {
     private File fileName;
     private XMLParser xmlParser;
-    private ArrayList<WordCollection> wordCollections;
     
     /**
      * Default constructor
@@ -31,7 +30,6 @@ public class Language extends ArrayList {
         System.out.println("New language object created");
         
         xmlParser = new XMLParser(this);
-        wordCollections = new ArrayList<>();
     }
     
     /** Load a language definition from an XML document
@@ -47,21 +45,5 @@ public class Language extends ArrayList {
         System.out.println(this.fileName.getName());
         
         xmlParser.parseXMLFile(fileName);
-    }
-
-    /**
-     * @return the wordCollections
-     */
-    public ArrayList<WordCollection> getWordCollections() {
-        return wordCollections;
-    }
-
-    /**
-     * @param wordCollections the wordCollections to set
-     */
-    public void setWordCollections(ArrayList<WordCollection> wordCollections) {
-        this.wordCollections = wordCollections;
-    }
-    
-    
+    } 
 }

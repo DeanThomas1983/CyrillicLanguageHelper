@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * e.g. days of the week
  * @author Dean Thomas
  */
-public class WordCollection extends ArrayList {
+public class WordCollection extends ArrayList<Word> {
     private String title;
     
     /**
@@ -20,7 +20,7 @@ public class WordCollection extends ArrayList {
      */
     public WordCollection(String title)
     {
-        System.out.println("New word collection created");
+        System.out.println("New word collection created: " + title);
         
         this.title = title;
     }
