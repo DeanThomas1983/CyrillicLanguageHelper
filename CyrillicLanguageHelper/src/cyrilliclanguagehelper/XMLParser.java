@@ -18,6 +18,10 @@ import org.xml.sax.helpers.DefaultHandler;
  * @author Dean Thomas
  */
 public class XMLParser extends DefaultHandler {
+    
+    private Boolean data;
+    private Boolean wordCollection;
+    
     /**
      * Default constructor
      */
@@ -51,12 +55,29 @@ public class XMLParser extends DefaultHandler {
     }
     
     @Override
+    public void startDocument()
+    {
+        data = false;
+        wordCollection = false;
+    }
+    
+    @Override
     public void startElement(String s, 
             String s1, 
             String elementName,
             Attributes attributes) throws SAXException
     {
         System.out.println("Found new element: " + elementName);
+        
+        if (elementName.equals("data"))
+        {
+            data = true;
+        }
+        
+        if (elementName.equals("WordCollection"))
+        {
+            wordCollection = true;
+        }
     }
     
     @Override
@@ -65,5 +86,15 @@ public class XMLParser extends DefaultHandler {
         String elementName)
     {
         System.out.println("End of element: " + elementName);
+        
+        if (elementName.equals("data"))
+        {
+            data = false;
+        }
+        
+        if (elementName.equals("WordCollection"))
+        {
+            wordCollection = false;
+        }
     }
 }
