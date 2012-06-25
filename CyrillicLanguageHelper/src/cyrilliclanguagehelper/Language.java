@@ -45,5 +45,15 @@ public class Language extends ArrayList<WordCollection> {
         System.out.println(this.fileName.getName());
         
         xmlParser.parseXMLFile(fileName);
-    } 
+    }
+    
+    public void dumpToConsole()
+    {
+        System.out.println("Language dump");
+        
+        for (WordCollection wordCollection: this)
+        {
+            wordCollection.dumpToConsole();
+        }
+    }
 }

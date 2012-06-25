@@ -22,10 +22,10 @@ public class XMLParser extends DefaultHandler {
     private Boolean data;
     //private Boolean wordCollection;
     private String tmp;
-    private Boolean english;
-    private Boolean word;
-    private boolean bulgarian;
-    private boolean phonetic;
+    //private Boolean english;
+    private Word word;
+    //private boolean bulgarian;
+    //private boolean phonetic;
     private WordCollection wordCollection;
     /**
      * Default constructor
@@ -67,15 +67,15 @@ public class XMLParser extends DefaultHandler {
         
         data = false;
         //wordCollection = false;
-        word = false;
-        english = false;
+        //word = false;
+        //english = false;
     }
     
     @Override
     public void characters(char [] ac, int i, int j) throws SAXException
     {
         //if (data && wordCollection && word)
-        //    tmp = new String(ac, i, j);
+            tmp = new String(ac, i, j);
     }
     
     @Override
@@ -102,24 +102,22 @@ public class XMLParser extends DefaultHandler {
         
         if (elementName.equalsIgnoreCase("Word"))
         {
-            word = true;
-            
-            System.out.println("Found new word");
+            word = new Word();
         }
         
         if (elementName.equalsIgnoreCase("English"))
         {
-            english = true;
+            //english = true;
         }
         
         if (elementName.equalsIgnoreCase("Bulgarian"))
         {
-            bulgarian = true;
+            //bulgarian = true;
         }
         
         if (elementName.equalsIgnoreCase("Phonetic"))
         {
-            phonetic = true;
+            //phonetic = true;
         }
     }
     
@@ -128,19 +126,39 @@ public class XMLParser extends DefaultHandler {
         String s1,
         String elementName)
     {
-        System.out.println("End of element: " + elementName);
+        //System.out.println("End of element: " + elementName);
         
-        System.out.println(tmp);
+        //System.out.println(tmp);
         
-        if (elementName.equals("data"))
+        if (elementName.equalsIgnoreCase("data"))
         {
             data = false;
         }
         
-        if (elementName.equals("WordCollection"))
+        if (elementName.equalsIgnoreCase("WordCollection"))
         {
             this.language.add(wordCollection);
             //wordCollection = false;
+        }
+        
+        if (elementName.equalsIgnoreCase("Word"))
+        {
+            wordCollection.add(word);
+        }
+        
+        if (elementName.equalsIgnoreCase("English"))
+        {
+            word.setEnglish(tmp);
+        }
+        
+        if (elementName.equalsIgnoreCase("Bulgarian"))
+        {
+            word.setBulgarian(tmp);
+        }
+        
+        if (elementName.equalsIgnoreCase("Phonetic"))
+        {
+            word.setPhonetic(tmp);
         }
     }
 }

@@ -16,6 +16,14 @@ import java.util.ArrayList;
 public class LanguageList extends ArrayList<Language> {
     private String inputDirectory;
     
+    public void dumpToConsole()
+    {
+        for (Language language : this)
+        {
+            language.dumpToConsole();
+        }
+    }
+    
     /**
      * Default constructor.  Set the input directory to the current working
      * directory and load any files within it.
@@ -38,6 +46,8 @@ public class LanguageList extends ArrayList<Language> {
         }
         
         loadLanguageFiles();
+        
+        this.dumpToConsole();
     }
     
     /**

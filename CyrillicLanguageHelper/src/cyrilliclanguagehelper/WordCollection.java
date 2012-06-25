@@ -24,4 +24,14 @@ public class WordCollection extends ArrayList<Word> {
         
         this.title = title;
     }
+    
+    public void dumpToConsole()
+    {
+        System.out.println("Word collection dump: " + title);
+        
+        for (Word word: this)
+        {
+            word.dumpToConsole();
+        }
+    }
 }
