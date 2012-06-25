@@ -6,6 +6,10 @@ package cyrilliclanguagehelper;
 
 import java.io.File;
 import java.util.ArrayList;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import org.xml.sax.SAXException;
 
 /**
  * @class Language
@@ -13,6 +17,7 @@ import java.util.ArrayList;
  */
 public class Language extends ArrayList {
     private File fileName;
+    private XMLParser xmlParser;
     
     /**
      * Default constructor
@@ -21,6 +26,8 @@ public class Language extends ArrayList {
      */
     public Language()
     {
+        xmlParser = new XMLParser();
+        
         System.out.println("New language object created");
     }
     
@@ -36,12 +43,7 @@ public class Language extends ArrayList {
         
         System.out.println(this.fileName.getName());
         
-        parseXMLFile();
+        xmlParser.parseXMLFile(fileName);
     }
     
-    //  TODO: move this to a separate class?
-    private void parseXMLFile()
-    {
-        
-    }
 }
