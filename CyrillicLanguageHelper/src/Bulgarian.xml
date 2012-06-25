@@ -43,5 +43,66 @@ and open the template in the editor.
             <Phonetic>Nedelya</Phonetic>
         </Word>
     </WordCollection>
-    
+    <WordCollection title="Months of the year">
+        <Word>
+            <English>January</English>
+            <Bulgarian>Януари</Bulgarian>
+            <Phonetic>Yanuari</Phonetic>
+        </Word>
+        <Word>
+            <English>February</English>
+            <Bulgarian>Февруари</Bulgarian>
+            <Phonetic>Fevruari</Phonetic>
+        </Word>
+        <Word>
+            <English>March</English>
+            <Bulgarian>Март</Bulgarian>
+            <Phonetic>Mart</Phonetic>
+        </Word>
+        <Word>
+            <English>April</English>
+            <Bulgarian>Аврил</Bulgarian>
+            <Phonetic>Avril</Phonetic>
+        </Word>
+        <Word>
+            <English>May</English>
+            <Bulgarian>Май</Bulgarian>
+            <Phonetic>Mai</Phonetic>
+        </Word>
+        <Word>
+            <English>June</English>
+            <Bulgarian>Юни</Bulgarian>
+            <Phonetic>Yuni</Phonetic>
+        </Word>
+        <Word>
+            <English>July</English>
+            <Bulgarian>Юли</Bulgarian>
+            <Phonetic>Yuli</Phonetic>
+        </Word>
+        <Word>
+            <English>August</English>
+            <Bulgarian>Август</Bulgarian>
+            <Phonetic>Avgust</Phonetic>
+        </Word>
+        <Word>
+            <English>September</English>
+            <Bulgarian>Септември</Bulgarian>
+            <Phonetic>Septemvri</Phonetic>
+        </Word>
+        <Word>
+            <English>October</English>
+            <Bulgarian>Октомври</Bulgarian>
+            <Phonetic>Oktomvri</Phonetic>
+        </Word>
+        <Word>
+            <English>November</English>
+            <Bulgarian>Ноември</Bulgarian>
+            <Phonetic>Noemvri</Phonetic>
+        </Word>
+        <Word>
+            <English>Decemeber</English>
+            <Bulgarian>Декември</Bulgarian>
+            <Phonetic>Dekemvri</Phonetic>
+        </Word>
+    </WordCollection>
 </data>
