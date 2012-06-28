@@ -20,4 +20,11 @@ public class DataModel {
         
         languageList = new LanguageList();
     }
+
+    /**
+     * @return the languageList
+     */
+    public LanguageList getLanguageList() {
+        return languageList;
+    }
 }

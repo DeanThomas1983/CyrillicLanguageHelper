@@ -52,7 +52,7 @@ public class Language extends ArrayList<WordCollection> {
     {
         System.out.println("Language dump");
         
-        this.alphabet.dumpToConsole();
+        this.getAlphabet().dumpToConsole();
         
         for (WordCollection wordCollection: this)
         {
