@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 /**
  * @class Alphabet 
+ * @description Provide a list of letters to associate with a particular 
+ * language 
  * @author Dean Thomas
  */
 public class Alphabet extends ArrayList<Letter> {
