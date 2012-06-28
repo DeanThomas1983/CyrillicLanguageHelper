@@ -117,27 +117,32 @@ public class XMLParser extends DefaultHandler {
         
         if (elementName.equalsIgnoreCase("WordCollection"))
         {
-            this.language.add(wordCollection);
+            if (data)
+                this.language.add(wordCollection);
         }
         
         if (elementName.equalsIgnoreCase("Word"))
         {
-            wordCollection.add(word);
+            if (data)
+                wordCollection.add(word);
         }
         
         if (elementName.equalsIgnoreCase("English"))
         {
-            word.setEnglish(dataString);
+            if (data)
+                word.setEnglish(dataString);
         }
         
         if (elementName.equalsIgnoreCase("Bulgarian"))
         {
-            word.setBulgarian(dataString);
+            if (data)
+                word.setBulgarian(dataString);
         }
         
         if (elementName.equalsIgnoreCase("Phonetic"))
         {
-            word.setPhonetic(dataString);
+            if (data)
+                word.setPhonetic(dataString);
         }
     }
 }
