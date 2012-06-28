@@ -14,7 +14,7 @@ public class CyrillicLanguageHelper {
 
     //  MVC variables
     private static DataModel dataModel;
-    private static MainViewController viewViewController;
+    private static MainViewController mainViewController;
     
     /**
      * @param args the command line arguments
@@ -22,6 +22,6 @@ public class CyrillicLanguageHelper {
     public static void main(String[] args) {
         // TODO code application logic here
         dataModel = new DataModel();
-        viewViewController = new MainViewController(dataModel);
+        mainViewController = new MainViewController(dataModel);
     }
 }
