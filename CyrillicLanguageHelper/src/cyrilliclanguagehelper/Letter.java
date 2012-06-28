@@ -9,23 +9,23 @@ package cyrilliclanguagehelper;
  * @author Dean Thomas
  */
 public class Letter {
-    private char englishUpper;
-    private char englishLower;
-    private char cyrillicUpper;
-    private char cyrillicLower;
+    private String englishUpper;
+    private String englishLower;
+    private String cyrillicUpper;
+    private String cyrillicLower;
     private String example; 
     /**
      * Default constructor
      */
     public Letter()
     {
-        
+        System.out.println("New letter created");
     }
 
-    public Letter(char englishUpper,
-            char englishLower,
-            char cyrillicUpper,
-            char cyrillicLower,
+    public Letter(String englishUpper,
+            String englishLower,
+            String cyrillicUpper,
+            String cyrillicLower,
             String example)
     {
         this.englishUpper = englishUpper;
@@ -38,28 +38,28 @@ public class Letter {
     /**
      * @return the englishUpper
      */
-    public char getEnglishUpper() {
+    public String getEnglishUpper() {
         return englishUpper;
     }
 
     /**
      * @return the englishLower
      */
-    public char getEnglishLower() {
+    public String getEnglishLower() {
         return englishLower;
     }
 
     /**
      * @return the cyrillicUpper
      */
-    public char getCyrillicUpper() {
+    public String getCyrillicUpper() {
         return cyrillicUpper;
     }
 
     /**
      * @return the cyrillicLower
      */
-    public char getCyrillicLower() {
+    public String getCyrillicLower() {
         return cyrillicLower;
     }
 
@@ -68,6 +68,49 @@ public class Letter {
      */
     public String getExample() {
         return example;
+    }
+
+    /**
+     * @param englishUpper the englishUpper to set
+     */
+    public void setEnglishUpper(String englishUpper) {
+        this.englishUpper = englishUpper;
+    }
+
+    /**
+     * @param englishLower the englishLower to set
+     */
+    public void setEnglishLower(String englishLower) {
+        this.englishLower = englishLower;
+    }
+
+    /**
+     * @param cyrillicUpper the cyrillicUpper to set
+     */
+    public void setCyrillicUpper(String cyrillicUpper) {
+        this.cyrillicUpper = cyrillicUpper;
+    }
+
+    /**
+     * @param cyrillicLower the cyrillicLower to set
+     */
+    public void setCyrillicLower(String cyrillicLower) {
+        this.cyrillicLower = cyrillicLower;
+    }
+
+    /**
+     * @param example the example to set
+     */
+    public void setExample(String example) {
+        this.example = example;
+    }
+
+    void dumpToConsole() {
+        System.out.println(this.englishUpper +
+                this.englishLower + 
+                " - " + 
+                this.cyrillicUpper + 
+                this.cyrillicLower);
     }
     
     

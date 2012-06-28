@@ -18,11 +18,21 @@ import org.xml.sax.helpers.DefaultHandler;
  * @author Dean Thomas
  */
 public class XMLParser extends DefaultHandler {
-    private Language language;
+    //  Section headers
+    private Boolean alphabet;
     private Boolean data;
-    private String dataString;
-    private Word word;
+    //  Top level langauge object
+    private Language language;
+    //  Lower level wordCollection / word objects
     private WordCollection wordCollection;
+    private Word word;
+    //  Lower level letter objects
+    private Letter letter;
+    //  Are we dealing with English or Cyrillic character
+    private Boolean cyrillic;
+    
+    //  Text buffer
+    private String dataString;
     
     /**
      * Default constructor
@@ -66,6 +76,8 @@ public class XMLParser extends DefaultHandler {
         System.out.println("Starting document");
         
         data = false;
+        alphabet = false;
+        cyrillic = false;
     }
     
     /**
@@ -89,9 +101,24 @@ public class XMLParser extends DefaultHandler {
             String elementName,
             Attributes attributes) throws SAXException
     {
+        if (elementName.equalsIgnoreCase("bulgarian"))
+        {
+            cyrillic = true;
+        }
+        
+        if (elementName.equalsIgnoreCase("english"))
+        {
+            cyrillic = false;
+        }
+        
         if (elementName.equalsIgnoreCase("data"))
         {
             data = true;
+        }
+        
+        if (elementName.equalsIgnoreCase("alphabet"))
+        {
+            alphabet = true;
         }
         
         if (elementName.equalsIgnoreCase("WordCollection"))
@@ -103,6 +130,11 @@ public class XMLParser extends DefaultHandler {
         {
             word = new Word();
         }
+        
+        if (elementName.equalsIgnoreCase("Letter"))
+        {
+            letter = new Letter();
+        }
     }
     
     @Override
@@ -110,9 +142,36 @@ public class XMLParser extends DefaultHandler {
         String s1,
         String elementName)
     {
+        if (elementName.equalsIgnoreCase("Uppercase"))
+        {
+            if (cyrillic)
+                letter.setCyrillicUpper(dataString);
+            else
+                letter.setEnglishUpper(dataString);
+        }
+        
+        if (elementName.equalsIgnoreCase("Lowercase"))
+        {
+            if (cyrillic)
+                letter.setCyrillicLower(dataString);
+            else
+                letter.setEnglishLower(dataString);
+        }
+        
+        if (elementName.equalsIgnoreCase("alphabet"))
+        {
+            alphabet = false;
+        }
+        
         if (elementName.equalsIgnoreCase("data"))
         {
             data = false;
+        }
+        
+        if (elementName.equalsIgnoreCase("letter"))
+        {
+            if (alphabet)
+                this.language.getAlphabet().add(letter);
         }
         
         if (elementName.equalsIgnoreCase("WordCollection"))

@@ -18,4 +18,12 @@ public class Alphabet extends ArrayList<Letter> {
     {
         System.out.println("New Alphabet object created");
     }
+    
+    public void dumpToConsole()
+    {
+        for (Letter l : this)
+        {
+            l.dumpToConsole();
+        }
+    }
 }

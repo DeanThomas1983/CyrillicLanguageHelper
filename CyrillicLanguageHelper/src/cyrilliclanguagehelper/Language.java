@@ -52,9 +52,19 @@ public class Language extends ArrayList<WordCollection> {
     {
         System.out.println("Language dump");
         
+        this.alphabet.dumpToConsole();
+        
         for (WordCollection wordCollection: this)
         {
             wordCollection.dumpToConsole();
         }
+    }
+
+    /**
+     * Return the alphabet database
+     * @return the alphabet
+     */
+    public Alphabet getAlphabet() {
+        return alphabet;
     }
 }
