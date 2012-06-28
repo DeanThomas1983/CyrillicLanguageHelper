@@ -13,10 +13,11 @@ package cyrilliclanguagehelper;
 public class MainViewController {
     private DataModel dataModel;
     private LetterFormViewController letterFormViewController;
+    private AlphabetFormViewController alphabetFormViewController;
     
     public MainViewController()
     {
-        System.out.print("MainViewController created");
+        System.out.println("MainViewController created");
     }
 
     MainViewController(DataModel dataModel) {
@@ -25,7 +26,9 @@ public class MainViewController {
         this.dataModel = dataModel;
         
         letterFormViewController = new LetterFormViewController(this.dataModel);
+        alphabetFormViewController = new AlphabetFormViewController(this.dataModel);
         
         letterFormViewController.setVisible(true);
+        alphabetFormViewController.setVisible(true);
     }
 }
