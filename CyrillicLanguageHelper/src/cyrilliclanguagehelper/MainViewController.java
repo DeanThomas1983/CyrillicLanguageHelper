@@ -5,8 +5,10 @@
 package cyrilliclanguagehelper;
 
 /**
- *
- * @author dean
+ * @class MainViewController
+ * @description Top level view controller used to initiate and control
+ * sub-view controller classes
+ * @author Dean Thomas
  */
 public class MainViewController {
     private DataModel dataModel;
@@ -14,13 +16,15 @@ public class MainViewController {
     
     public MainViewController()
     {
-        
+        System.out.print("MainViewController created");
     }
 
     MainViewController(DataModel dataModel) {
+        this();
+        
         this.dataModel = dataModel;
         
-        letterFormViewController = new LetterFormViewController(dataModel);
+        letterFormViewController = new LetterFormViewController(this.dataModel);
         
         letterFormViewController.setVisible(true);
     }

@@ -6,7 +6,8 @@ package cyrilliclanguagehelper;
 
 /**
  * @class Word
- * 
+ * @description Object to hold the Cyrillic, English and Phonetic spellings
+ * of a word
  * @author Dean Thomas
  */
 public class Word {

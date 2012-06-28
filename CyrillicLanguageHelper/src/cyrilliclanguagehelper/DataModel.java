@@ -6,6 +6,8 @@ package cyrilliclanguagehelper;
 
 /**
  * @class DataModel
+ * @description Top level class to hold the entire data-model for the 
+ * application
  * @author Dean Thomas
  */
 public class DataModel {
@@ -22,6 +24,7 @@ public class DataModel {
     }
 
     /**
+     * Return a list of all the languages held in the data-model
      * @return the languageList
      */
     public LanguageList getLanguageList() {

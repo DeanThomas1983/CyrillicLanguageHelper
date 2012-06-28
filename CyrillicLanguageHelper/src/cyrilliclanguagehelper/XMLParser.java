@@ -15,6 +15,7 @@ import org.xml.sax.helpers.DefaultHandler;
 
 /**
  * @class XMLParser
+ * @description Provide the ability to parse an XML language file
  * @author Dean Thomas
  */
 public class XMLParser extends DefaultHandler {

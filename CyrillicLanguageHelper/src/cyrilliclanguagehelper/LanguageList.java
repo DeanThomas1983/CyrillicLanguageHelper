@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 /**
  * @class LanguageList
- * @author dean
  * @decription Holds a list of implemented languages
+ * @author Dean Thomas
  */
 public class LanguageList extends ArrayList<Language> {
     private String inputDirectory;

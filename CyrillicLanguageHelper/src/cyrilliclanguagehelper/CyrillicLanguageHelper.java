@@ -6,9 +6,10 @@ package cyrilliclanguagehelper;
 
 /**
  * Cyrillic Language Helper
+ * @decription An application designed to assist in the learning of languages
+ * written in the Cyrillic character set
  * @author Dean Thomas
  * @version 0.1
- * 
  */
 public class CyrillicLanguageHelper {
 

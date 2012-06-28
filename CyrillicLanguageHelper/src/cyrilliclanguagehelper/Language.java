@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
 /**
  * @class Language
+ * @description Provide a holder for the alphabet and groups of associated
+ * translations for a particular Cyrillic language
  * @author Dean Thomas
  */
 public class Language extends ArrayList<WordCollection> {

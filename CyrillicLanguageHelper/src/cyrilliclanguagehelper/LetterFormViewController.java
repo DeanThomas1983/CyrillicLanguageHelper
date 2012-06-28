@@ -7,7 +7,8 @@ package cyrilliclanguagehelper;
 import java.util.Random;
 
 /**
- *
+ * @class LetterFormViewController
+ * @description Provide functionality related to the Letter Form 
  * @author dean
  */
 public class LetterFormViewController extends javax.swing.JFrame {

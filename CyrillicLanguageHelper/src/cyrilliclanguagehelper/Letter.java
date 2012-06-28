@@ -6,6 +6,8 @@ package cyrilliclanguagehelper;
 
 /**
  * @class Letter
+ * @description Hold variables to represent a single character in English and
+ * Cyrillic and an example of how the letter should sound phonetically
  * @author Dean Thomas
  */
 public class Letter {
