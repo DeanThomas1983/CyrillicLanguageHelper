@@ -142,6 +142,11 @@ public class XMLParser extends DefaultHandler {
         String s1,
         String elementName)
     {
+        if (elementName.equalsIgnoreCase("Example"))
+        {
+            letter.setExample(dataString);
+        }
+        
         if (elementName.equalsIgnoreCase("Uppercase"))
         {
             if (cyrillic)

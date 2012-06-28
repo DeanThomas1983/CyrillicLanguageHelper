@@ -38,6 +38,9 @@ public class LetterForm extends javax.swing.JFrame {
         
         smallCharacterLabel.setText(
                 dataModel.getLanguageList().get(0).getAlphabet().get(r).getEnglishUpper());
+        
+        jLabel2.setText(
+                dataModel.getLanguageList().get(0).getAlphabet().get(r).getExample());
     }
     
     /**
