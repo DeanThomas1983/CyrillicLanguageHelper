@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * @author Dean Thomas
  */
 public class Language extends ArrayList<WordCollection> {
+    private Alphabet alphabet;
     private File fileName;
     private XMLParser xmlParser;
     
@@ -23,6 +24,8 @@ public class Language extends ArrayList<WordCollection> {
     public Language()
     {
         System.out.println("New language object created");
+        
+        this.alphabet = new Alphabet();
         
         xmlParser = new XMLParser(this);
     }
