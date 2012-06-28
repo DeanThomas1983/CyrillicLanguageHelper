@@ -6,153 +6,333 @@ and open the template in the editor.
 
 <alphabet>
     <Letter>
-        <Bulgarian>Аа</Bulgarian>
-        <English>Aa</English>
+        <Bulgarian>
+            <Uppercase>А</Uppercase>
+            <Lowercase>а</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>A</Uppercase>
+            <Lowercase>a</Lowercase>
+        </English>
         <Example>Adorable</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Бб</Bulgarian>
-        <English>Bb</English>
+        <Bulgarian>
+            <Uppercase>Б</Uppercase>
+            <Lowercase>б</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>B</Uppercase>
+            <Lowercase>b</Lowercase>
+        </English>
         <Example>Bug</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Вв</Bulgarian>
-        <English>Vv</English>
+        <Bulgarian>
+            <Uppercase>В</Uppercase>
+            <Lowercase>в</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>V</Uppercase>
+            <Lowercase>v</Lowercase>
+        </English>
         <Example>Vet</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Гг</Bulgarian>
-        <English>Gg</English>
+        <Bulgarian>
+            <Uppercase>Г</Uppercase>
+            <Lowercase>г</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>G</Uppercase>
+            <Lowercase>g</Lowercase>
+        </English>
         <Example>God</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Дд</Bulgarian>
-        <English>Dd</English>
+        <Bulgarian>
+            <Uppercase>Д</Uppercase>
+            <Lowercase></Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>D</Uppercase>
+            <Lowercase>d</Lowercase>
+        </English>
         <Example>Dog</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Ее</Bulgarian>
-        <English>Ee</English>
+        <Bulgarian>
+            <Uppercase>Е</Uppercase>
+            <Lowercase>е</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>E</Uppercase>
+            <Lowercase>e</Lowercase>
+        </English>
         <Example>bEst</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Жж</Bulgarian>
-        <English>Zhzh</English>
+        <Bulgarian>
+            <Uppercase>Ж</Uppercase>
+            <Lowercase>ж</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Zh</Uppercase>
+            <Lowercase>zh</Lowercase>
+        </English>
         <Example>treaSure</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Зз</Bulgarian>
-        <English>Zz</English>
+        <Bulgarian>
+            <Uppercase>З</Uppercase>
+            <Lowercase>з</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Z</Uppercase>
+            <Lowercase>z</Lowercase>
+        </English>
         <Example>Zoo</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Ии</Bulgarian>
-        <English>Ii</English>
+        <Bulgarian>
+            <Uppercase>И</Uppercase>
+            <Lowercase>и</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>I</Uppercase>
+            <Lowercase>i</Lowercase>
+        </English>
         <Example>Igloo</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Йй</Bulgarian>
-        <English>Yy</English>
+        <Bulgarian>
+            <Uppercase>Й</Uppercase>
+            <Lowercase>й</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Y</Uppercase>
+            <Lowercase>y</Lowercase>
+        </English>
         <Example>Yes</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Кк</Bulgarian>
-        <English>Kk</English>
+        <Bulgarian>
+            <Uppercase>К</Uppercase>
+            <Lowercase>к</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>K</Uppercase>
+            <Lowercase>k</Lowercase>
+        </English>
         <Example>Cat</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Лл</Bulgarian>
-        <English>Ll</English>
+        <Bulgarian>
+            <Uppercase>Л</Uppercase>
+            <Lowercase>л</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>L</Uppercase>
+            <Lowercase>l</Lowercase>
+        </English>
         <Example>CaLL</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Мм</Bulgarian>
-        <English>Mm</English>
+        <Bulgarian>
+            <Uppercase>М</Uppercase>
+            <Lowercase>м</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>M</Uppercase>
+            <Lowercase>m</Lowercase>
+        </English>
         <Example>Man</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Нн</Bulgarian>
-        <English>Nn</English>
+        <Bulgarian>
+            <Uppercase>Н</Uppercase>
+            <Lowercase>н</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>N</Uppercase>
+            <Lowercase>n</Lowercase>
+        </English>
         <Example>Normal</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Оо</Bulgarian>
-        <English>Oo</English>
+        <Bulgarian>
+            <Uppercase>О</Uppercase>
+            <Lowercase>о</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>O</Uppercase>
+            <Lowercase>o</Lowercase>
+        </English>
         <Example>Order</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Пп</Bulgarian>
-        <English>Pp</English>
+        <Bulgarian>
+            <Uppercase>П</Uppercase>
+            <Lowercase>п</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>P</Uppercase>
+            <Lowercase>p</Lowercase>
+        </English>
         <Example>Pet</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Рр</Bulgarian>
-        <English>Rr</English>
+        <Bulgarian>
+            <Uppercase>Р</Uppercase>
+            <Lowercase>р</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>R</Uppercase>
+            <Lowercase>r</Lowercase>
+        </English>
         <Example>Restaurant</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Сс</Bulgarian>
-        <English>Ss</English>
+        <Bulgarian>
+            <Uppercase>С</Uppercase>
+            <Lowercase>с</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>S</Uppercase>
+            <Lowercase>s</Lowercase>
+        </English>
         <Example>Sound</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Тт</Bulgarian>
-        <English>Tt</English>
+        <Bulgarian>
+            <Uppercase>Т</Uppercase>
+            <Lowercase>т</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>T</Uppercase>
+            <Lowercase>t</Lowercase>
+        </English>
         <Example>Tool</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Уу</Bulgarian>
-        <English>Uu</English>
+        <Bulgarian>
+            <Uppercase>У</Uppercase>
+            <Lowercase>у</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>U</Uppercase>
+            <Lowercase>u</Lowercase>
+        </English>
         <Example>tOOl</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Фф</Bulgarian>
-        <English>Ff</English>
+        <Bulgarian>
+            <Uppercase>Ф</Uppercase>
+            <Lowercase>ф</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>F</Uppercase>
+            <Lowercase>f</Lowercase>
+        </English>
         <Example>Food</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Хх</Bulgarian>
-        <English>Hh</English>
+        <Bulgarian>
+            <Uppercase>Х</Uppercase>
+            <Lowercase>х</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>H</Uppercase>
+            <Lowercase>h</Lowercase>
+        </English>
         <Example>loCH</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Цц</Bulgarian>
-        <English>Tsts</English>
+        <Bulgarian>
+            <Uppercase>Ц</Uppercase>
+            <Lowercase>ц</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Ts</Uppercase>
+            <Lowercase>ts</Lowercase>
+        </English>
         <Example>fiTS</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Чч</Bulgarian>
-        <English>Chch</English>
+        <Bulgarian>
+            <Uppercase>Ч</Uppercase>
+            <Lowercase>ч</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Ch</Uppercase>
+            <Lowercase>ch</Lowercase>
+        </English>
         <Example>CHip</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Шш</Bulgarian>
-        <English>Shsh</English>
+        <Bulgarian>
+            <Uppercase>Ш</Uppercase>
+            <Lowercase>ш</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Sh</Uppercase>
+            <Lowercase>sh</Lowercase>
+        </English>
         <Example>SHot</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Щщ</Bulgarian>
-        <English>Shtsht</English>
+        <Bulgarian>
+            <Uppercase>Щ</Uppercase>
+            <Lowercase>щ</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Sht</Uppercase>
+            <Lowercase>sht</Lowercase>
+        </English>
         <Example>SHTick</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Ъъ</Bulgarian>
-        <English>Aa</English>
+        <Bulgarian>
+            <Uppercase>Ъ</Uppercase>
+            <Lowercase>ъ</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>A</Uppercase>
+            <Lowercase>a</Lowercase>
+        </English>
         <Example>tUrn</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Ьь</Bulgarian>
-        <English>Yy</English>
+        <Bulgarian>
+            <Uppercase>Ь</Uppercase>
+            <Lowercase>ь</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Y</Uppercase>
+            <Lowercase>y</Lowercase>
+        </English>
         <Example>canYon</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Юю</Bulgarian>
-        <English>Yuyu</English>
+        <Bulgarian>
+            <Uppercase>Ю</Uppercase>
+            <Lowercase>ю</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Yu</Uppercase>
+            <Lowercase>yu</Lowercase>
+        </English>
         <Example>menU</Example>
     </Letter>
     <Letter>
-        <Bulgarian>Яя</Bulgarian>
-        <English>Yaya</English>
+        <Bulgarian>
+            <Uppercase>Я</Uppercase>
+            <Lowercase>я</Lowercase>
+        </Bulgarian>
+        <English>
+            <Uppercase>Ya</Uppercase>
+            <Lowercase>ya</Lowercase>
+        </English>
         <Example>YArn</Example>
     </Letter>
 </alphabet>
