@@ -11,7 +11,8 @@ import java.util.Random;
  * @author dean
  */
 public class LetterForm extends javax.swing.JFrame {
-
+    private Random random = new Random();
+        
     private DataModel dataModel;
     /**
      * Creates new form LetterForm
@@ -29,8 +30,6 @@ public class LetterForm extends javax.swing.JFrame {
     
     private void randomLetter()
     {
-        Random random = new Random();
-        
         int r = random.nextInt(dataModel.getLanguageList().get(0).getAlphabet().size());
            
         largeCharacterLabel.setText(
