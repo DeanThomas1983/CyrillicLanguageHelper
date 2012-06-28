@@ -15,7 +15,7 @@ and open the template in the editor.
                 <Uppercase>A</Uppercase>
                 <Lowercase>a</Lowercase>
             </English>
-            <Example>Adorable</Example>
+            <Example>adorable</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -26,7 +26,7 @@ and open the template in the editor.
                 <Uppercase>B</Uppercase>
                 <Lowercase>b</Lowercase>
             </English>
-            <Example>Bug</Example>
+            <Example>bug</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -37,7 +37,7 @@ and open the template in the editor.
                 <Uppercase>V</Uppercase>
                 <Lowercase>v</Lowercase>
             </English>
-            <Example>Vet</Example>
+            <Example>vet</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -48,7 +48,7 @@ and open the template in the editor.
                 <Uppercase>G</Uppercase>
                 <Lowercase>g</Lowercase>
             </English>
-            <Example>God</Example>
+            <Example>god</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -59,7 +59,7 @@ and open the template in the editor.
                 <Uppercase>D</Uppercase>
                 <Lowercase>d</Lowercase>
             </English>
-            <Example>Dog</Example>
+            <Example>dog</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -70,7 +70,7 @@ and open the template in the editor.
                 <Uppercase>E</Uppercase>
                 <Lowercase>e</Lowercase>
             </English>
-            <Example>bEst</Example>
+            <Example>best</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -81,7 +81,7 @@ and open the template in the editor.
                 <Uppercase>Zh</Uppercase>
                 <Lowercase>zh</Lowercase>
             </English>
-            <Example>treaSure</Example>
+            <Example>treasure</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -92,7 +92,7 @@ and open the template in the editor.
                 <Uppercase>Z</Uppercase>
                 <Lowercase>z</Lowercase>
             </English>
-            <Example>Zoo</Example>
+            <Example>zoo</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -103,7 +103,7 @@ and open the template in the editor.
                 <Uppercase>I</Uppercase>
                 <Lowercase>i</Lowercase>
             </English>
-            <Example>Igloo</Example>
+            <Example>igloo</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -114,7 +114,7 @@ and open the template in the editor.
                 <Uppercase>Y</Uppercase>
                 <Lowercase>y</Lowercase>
             </English>
-            <Example>Yes</Example>
+            <Example>yes</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -125,7 +125,7 @@ and open the template in the editor.
                 <Uppercase>K</Uppercase>
                 <Lowercase>k</Lowercase>
             </English>
-            <Example>Cat</Example>
+            <Example>cat</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -136,7 +136,7 @@ and open the template in the editor.
                 <Uppercase>L</Uppercase>
                 <Lowercase>l</Lowercase>
             </English>
-            <Example>CaLL</Example>
+            <Example>call</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -147,7 +147,7 @@ and open the template in the editor.
                 <Uppercase>M</Uppercase>
                 <Lowercase>m</Lowercase>
             </English>
-            <Example>Man</Example>
+            <Example>man</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -158,7 +158,7 @@ and open the template in the editor.
                 <Uppercase>N</Uppercase>
                 <Lowercase>n</Lowercase>
             </English>
-            <Example>Normal</Example>
+            <Example>normal</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -169,7 +169,7 @@ and open the template in the editor.
                 <Uppercase>O</Uppercase>
                 <Lowercase>o</Lowercase>
             </English>
-            <Example>Order</Example>
+            <Example>order</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -180,7 +180,7 @@ and open the template in the editor.
                 <Uppercase>P</Uppercase>
                 <Lowercase>p</Lowercase>
             </English>
-            <Example>Pet</Example>
+            <Example>pet</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -191,7 +191,7 @@ and open the template in the editor.
                 <Uppercase>R</Uppercase>
                 <Lowercase>r</Lowercase>
             </English>
-            <Example>Restaurant</Example>
+            <Example>restaurant</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -202,7 +202,7 @@ and open the template in the editor.
                 <Uppercase>S</Uppercase>
                 <Lowercase>s</Lowercase>
             </English>
-            <Example>Sound</Example>
+            <Example>sound</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -213,7 +213,7 @@ and open the template in the editor.
                 <Uppercase>T</Uppercase>
                 <Lowercase>t</Lowercase>
             </English>
-            <Example>Tool</Example>
+            <Example>tool</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -224,7 +224,7 @@ and open the template in the editor.
                 <Uppercase>U</Uppercase>
                 <Lowercase>u</Lowercase>
             </English>
-            <Example>tOOl</Example>
+            <Example>tool</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -235,7 +235,7 @@ and open the template in the editor.
                 <Uppercase>F</Uppercase>
                 <Lowercase>f</Lowercase>
             </English>
-            <Example>Food</Example>
+            <Example>food</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -246,7 +246,7 @@ and open the template in the editor.
                 <Uppercase>H</Uppercase>
                 <Lowercase>h</Lowercase>
             </English>
-            <Example>loCH</Example>
+            <Example>loch</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -257,7 +257,7 @@ and open the template in the editor.
                 <Uppercase>Ts</Uppercase>
                 <Lowercase>ts</Lowercase>
             </English>
-            <Example>fiTS</Example>
+            <Example>fits</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -268,7 +268,7 @@ and open the template in the editor.
                 <Uppercase>Ch</Uppercase>
                 <Lowercase>ch</Lowercase>
             </English>
-            <Example>CHip</Example>
+            <Example>chip</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -279,7 +279,7 @@ and open the template in the editor.
                 <Uppercase>Sh</Uppercase>
                 <Lowercase>sh</Lowercase>
             </English>
-            <Example>SHot</Example>
+            <Example>shot</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -290,7 +290,7 @@ and open the template in the editor.
                 <Uppercase>Sht</Uppercase>
                 <Lowercase>sht</Lowercase>
             </English>
-            <Example>SHTick</Example>
+            <Example>schtick</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -301,7 +301,7 @@ and open the template in the editor.
                 <Uppercase>A</Uppercase>
                 <Lowercase>a</Lowercase>
             </English>
-            <Example>tUrn</Example>
+            <Example>turn</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -312,7 +312,7 @@ and open the template in the editor.
                 <Uppercase>Y</Uppercase>
                 <Lowercase>y</Lowercase>
             </English>
-            <Example>canYon</Example>
+            <Example>canyon</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -323,7 +323,7 @@ and open the template in the editor.
                 <Uppercase>Yu</Uppercase>
                 <Lowercase>yu</Lowercase>
             </English>
-            <Example>menU</Example>
+            <Example>menu</Example>
         </Letter>
         <Letter>
             <Bulgarian>
@@ -334,7 +334,7 @@ and open the template in the editor.
                 <Uppercase>Ya</Uppercase>
                 <Lowercase>ya</Lowercase>
             </English>
-            <Example>YArn</Example>
+            <Example>yarn</Example>
         </Letter>
     </alphabet>
     
