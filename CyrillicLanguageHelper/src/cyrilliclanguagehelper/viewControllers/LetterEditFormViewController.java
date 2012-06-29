@@ -18,6 +18,7 @@ public class LetterEditFormViewController extends javax.swing.JFrame {
     public LetterEditFormViewController() {
         initComponents();
         
+        populateEnglishComboBoxes();
         populateCyrillicComboBoxes();
     }
     
@@ -72,7 +73,7 @@ public class LetterEditFormViewController extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
+        EnglishUpperCaseComboBox = new javax.swing.JComboBox();
         jComboBox2 = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
         jToggleButton2 = new javax.swing.JToggleButton();
@@ -107,7 +108,7 @@ public class LetterEditFormViewController extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(EnglishUpperCaseComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
@@ -125,7 +126,7 @@ public class LetterEditFormViewController extends javax.swing.JFrame {
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(EnglishUpperCaseComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel2)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -321,11 +322,11 @@ public class LetterEditFormViewController extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox EnglishUpperCaseComboBox;
     private javax.swing.JComboBox cyrillicCapitalLetterComboBox;
     private javax.swing.JComboBox cyrillicSmallLetterComboBox;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -339,4 +340,30 @@ public class LetterEditFormViewController extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JToggleButton jToggleButton3;
     // End of variables declaration//GEN-END:variables
+
+    private void populateEnglishComboBoxes() {
+        DefaultComboBoxModel englishUpperCaseComboBoxModel
+                = new DefaultComboBoxModel();
+        
+        //  Add uppercase letters
+        for (char c = 'A'; c < '['; c++)
+        {
+            englishUpperCaseComboBoxModel.addElement(c);
+        }
+        
+        EnglishUpperCaseComboBox.setModel(englishUpperCaseComboBoxModel);
+        
+        DefaultComboBoxModel englishLowerCaseComboBoxModel
+                =   new DefaultComboBoxModel();
+        
+        //  Convert uppercase chars / strings to lowercase
+        for (int i = 0; i < englishUpperCaseComboBoxModel.getSize(); i++)
+        {
+            String s = englishUpperCaseComboBoxModel.getElementAt(i).toString();
+            
+            englishLowerCaseComboBoxModel.addElement(s.toLowerCase());
+        }
+        
+        jComboBox2.setModel(englishLowerCaseComboBoxModel);
+    }
 }
