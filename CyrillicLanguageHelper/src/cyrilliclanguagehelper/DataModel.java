@@ -4,6 +4,8 @@
  */
 package cyrilliclanguagehelper;
 
+import cyrilliclanguagehelper.dataModel.LanguageList;
+
 /**
  * @class DataModel
  * @description Top level class to hold the entire data-model for the 

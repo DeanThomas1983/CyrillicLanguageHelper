@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cyrilliclanguagehelper;
+package cyrilliclanguagehelper.dataModel;
 
+import cyrilliclanguagehelper.dataModel.Letter;
 import java.util.ArrayList;
 
 /**

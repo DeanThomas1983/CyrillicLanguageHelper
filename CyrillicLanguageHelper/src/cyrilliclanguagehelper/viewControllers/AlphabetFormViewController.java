@@ -2,8 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cyrilliclanguagehelper;
+package cyrilliclanguagehelper.viewControllers;
 
+import cyrilliclanguagehelper.DataModel;
+import cyrilliclanguagehelper.dataModel.Letter;
 import javax.swing.DefaultListModel;
 
 /**

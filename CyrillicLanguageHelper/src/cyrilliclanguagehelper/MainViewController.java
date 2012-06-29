@@ -4,6 +4,10 @@
  */
 package cyrilliclanguagehelper;
 
+import cyrilliclanguagehelper.DataModel;
+import cyrilliclanguagehelper.viewControllers.AlphabetFormViewController;
+import cyrilliclanguagehelper.viewControllers.LetterFormViewController;
+
 /**
  * @class MainViewController
  * @description Top level view controller used to initiate and control
@@ -20,7 +24,7 @@ public class MainViewController {
         System.out.println("MainViewController created");
     }
 
-    MainViewController(DataModel dataModel) {
+    public MainViewController(DataModel dataModel) {
         this();
         
         this.dataModel = dataModel;
