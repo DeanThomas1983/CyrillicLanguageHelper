@@ -6,7 +6,7 @@ package cyrilliclanguagehelper;
 
 import cyrilliclanguagehelper.DataModel;
 import cyrilliclanguagehelper.viewControllers.AlphabetFormViewController;
-import cyrilliclanguagehelper.viewControllers.LetterFormViewController;
+import cyrilliclanguagehelper.viewControllers.LetterFlashcardFormViewController;
 
 /**
  * @class MainViewController
@@ -16,7 +16,7 @@ import cyrilliclanguagehelper.viewControllers.LetterFormViewController;
  */
 public class MainViewController {
     private DataModel dataModel;
-    private LetterFormViewController letterFormViewController;
+    private LetterFlashcardFormViewController letterFormViewController;
     private AlphabetFormViewController alphabetFormViewController;
     
     public MainViewController()
@@ -30,7 +30,7 @@ public class MainViewController {
         this.dataModel = dataModel;
         
         letterFormViewController = 
-                new LetterFormViewController(this.dataModel);
+                new LetterFlashcardFormViewController(this.dataModel);
         alphabetFormViewController = 
                 new AlphabetFormViewController(this.dataModel);
         

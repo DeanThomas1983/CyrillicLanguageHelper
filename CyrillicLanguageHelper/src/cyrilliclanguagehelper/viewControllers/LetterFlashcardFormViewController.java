@@ -13,18 +13,18 @@ import java.util.Random;
  * @description Provide functionality related to the Letter Form 
  * @author dean
  */
-public class LetterFormViewController extends javax.swing.JFrame {
+public class LetterFlashcardFormViewController extends javax.swing.JFrame {
     private Random random = new Random();
         
     private DataModel dataModel;
     /**
      * Creates new form LetterForm
      */
-    public LetterFormViewController() {
+    public LetterFlashcardFormViewController() {
         initComponents();
     }
 
-    public LetterFormViewController(DataModel dataModel)
+    public LetterFlashcardFormViewController(DataModel dataModel)
     {
         this();
         
@@ -181,13 +181,13 @@ public class LetterFormViewController extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LetterFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LetterFlashcardFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LetterFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LetterFlashcardFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LetterFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LetterFlashcardFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LetterFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LetterFlashcardFormViewController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -197,7 +197,7 @@ public class LetterFormViewController extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new LetterFormViewController().setVisible(true);
+                new LetterFlashcardFormViewController().setVisible(true);
             }
         });
     }
