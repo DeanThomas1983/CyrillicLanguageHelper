@@ -25,8 +25,10 @@ public class MainViewController {
         
         this.dataModel = dataModel;
         
-        letterFormViewController = new LetterFormViewController(this.dataModel);
-        alphabetFormViewController = new AlphabetFormViewController(this.dataModel);
+        letterFormViewController = 
+                new LetterFormViewController(this.dataModel);
+        alphabetFormViewController = 
+                new AlphabetFormViewController(this.dataModel);
         
         letterFormViewController.setVisible(true);
         alphabetFormViewController.setVisible(true);

@@ -4,7 +4,6 @@
  */
 package cyrilliclanguagehelper;
 
-import java.awt.Font;
 import javax.swing.DefaultListModel;
 
 /**
@@ -30,7 +29,8 @@ public class AlphabetFormViewController extends javax.swing.JFrame {
         
         DefaultListModel listModel = new DefaultListModel();
         
-        for (Letter letter : this.dataModel.getLanguageList().get(0).getAlphabet())
+        for (Letter letter : 
+                this.dataModel.getLanguageList().get(0).getAlphabet())
         {
             listModel.addElement(letter.getCyrillicUpper() 
                 + letter.getCyrillicLower());
