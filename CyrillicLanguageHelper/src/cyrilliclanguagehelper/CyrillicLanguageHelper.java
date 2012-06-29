@@ -5,6 +5,10 @@
 package cyrilliclanguagehelper;
 
 /**
+ * Icons "cc_mono_icon_set_png" from gentleface.com
+ */
+
+/**
  * Cyrillic Language Helper
  * @decription An application designed to assist in the learning of languages
  * written in the Cyrillic character set
