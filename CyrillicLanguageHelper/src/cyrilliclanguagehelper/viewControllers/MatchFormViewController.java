@@ -15,7 +15,7 @@ import javax.swing.DefaultComboBoxModel;
  */
 public class MatchFormViewController extends javax.swing.JFrame {
 
-    Random random = new Random();
+    //Random random = new Random();
     
     private DataModel dataModel;
     
@@ -38,8 +38,14 @@ public class MatchFormViewController extends javax.swing.JFrame {
         this.dataModel = dataModel;
         
         setWordCollectionList();
+        
+        showRandomWord();
     }
     
+    /**
+     * Get a list of categories of words available for the chosen language and
+     * set the combo box items to reflect these.
+     */
     private void setWordCollectionList()
     {
         dataModel.getLanguageList().get(0).getCollectionTitles();
@@ -50,9 +56,11 @@ public class MatchFormViewController extends javax.swing.JFrame {
         categoryCombobox.setModel(comboBoxDataModel);
     }
     
-    public void showRandomWord()
+    private void showRandomWord()
     {
-        
+        wordLabel.setText(
+                dataModel.getLanguageList().get(0).get(
+                    categoryCombobox.getSelectedIndex()).getRandomWord());
     }
     
     /**
@@ -92,6 +100,11 @@ public class MatchFormViewController extends javax.swing.JFrame {
         fromLanguageCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         categoryCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        categoryCombobox.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                categoryComboboxItemStateChanged(evt);
+            }
+        });
 
         toLanguageCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -148,6 +161,11 @@ public class MatchFormViewController extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void categoryComboboxItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_categoryComboboxItemStateChanged
+        // TODO add your handling code here:
+        showRandomWord();
+    }//GEN-LAST:event_categoryComboboxItemStateChanged
 
     /**
      * @param args the command line arguments

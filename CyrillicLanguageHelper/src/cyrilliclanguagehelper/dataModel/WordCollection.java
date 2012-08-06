@@ -5,6 +5,7 @@
 package cyrilliclanguagehelper.dataModel;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * @class WordCollection
@@ -14,6 +15,16 @@ import java.util.ArrayList;
  */
 public class WordCollection extends ArrayList<Word> {
     private String title;
+    
+    private Random random = new Random();
+    
+    /**
+     * Get a random word from the collection
+     */
+    public String getRandomWord()
+    {
+        return this.get(random.nextInt(this.size())).getBulgarian();
+    }
     
     /**
      * Default constructor
