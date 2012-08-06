@@ -6,6 +6,8 @@ package cyrilliclanguagehelper.viewControllers;
 
 import cyrilliclanguagehelper.DataModel;
 import java.util.Random;
+import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
 
 /**
  *
@@ -32,6 +34,18 @@ public class MatchFormViewController extends javax.swing.JFrame {
         this();
         
         this.dataModel = dataModel;
+        
+        setWordCollectionList();
+    }
+    
+    private void setWordCollectionList()
+    {
+        dataModel.getLanguageList().get(0).getCollectionTitles();
+        
+        ComboBoxModel comboBoxDataModel = new DefaultComboBoxModel(
+                dataModel.getLanguageList().get(0).getCollectionTitles().toArray());
+        
+        categoryCombobox.setModel(comboBoxDataModel);
     }
     
     public void showRandomWord()

@@ -30,11 +30,18 @@ public class WordCollection extends ArrayList<Word> {
      */
     public void dumpToConsole()
     {
-        System.out.println("Word collection dump: " + title);
+        System.out.println("Word collection dump: " + getTitle());
         
         for (Word word: this)
         {
             word.dumpToConsole();
         }
+    }
+
+    /**
+     * @return the title
+     */
+    public String getTitle() {
+        return title;
     }
 }

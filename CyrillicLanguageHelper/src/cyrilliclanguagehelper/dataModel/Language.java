@@ -4,8 +4,6 @@
  */
 package cyrilliclanguagehelper.dataModel;
 
-import cyrilliclanguagehelper.dataModel.XMLParser;
-import cyrilliclanguagehelper.dataModel.WordCollection;
 import java.io.File;
 import java.util.ArrayList;
 
@@ -19,6 +17,19 @@ public class Language extends ArrayList<WordCollection> {
     private Alphabet alphabet;
     private File fileName;
     private XMLParser xmlParser;
+    
+    
+    public ArrayList<String> getCollectionTitles()
+    {
+        ArrayList<String> result = new ArrayList<>();
+        
+        for (WordCollection w : this)
+        {
+            result.add(w.getTitle());
+        }
+        
+        return result;
+    }
     
     /**
      * Default constructor

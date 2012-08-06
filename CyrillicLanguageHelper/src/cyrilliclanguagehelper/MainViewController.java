@@ -4,9 +4,9 @@
  */
 package cyrilliclanguagehelper;
 
-import cyrilliclanguagehelper.DataModel;
 import cyrilliclanguagehelper.viewControllers.AlphabetFormViewController;
 import cyrilliclanguagehelper.viewControllers.LetterFlashcardFormViewController;
+import cyrilliclanguagehelper.viewControllers.MatchFormViewController;
 
 /**
  * @class MainViewController
@@ -18,6 +18,7 @@ public class MainViewController {
     private DataModel dataModel;
     private LetterFlashcardFormViewController letterFormViewController;
     private AlphabetFormViewController alphabetFormViewController;
+    private MatchFormViewController matchFormViewController;
     
     public MainViewController()
     {
@@ -33,8 +34,11 @@ public class MainViewController {
                 new LetterFlashcardFormViewController(this.dataModel);
         alphabetFormViewController = 
                 new AlphabetFormViewController(this.dataModel);
+        matchFormViewController =
+                new MatchFormViewController(this.dataModel);
         
         letterFormViewController.setVisible(true);
         alphabetFormViewController.setVisible(true);
+        matchFormViewController.setVisible(true);
     }
 }
