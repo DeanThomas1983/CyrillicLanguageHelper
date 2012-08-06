@@ -24,6 +24,8 @@ public class MatchFormViewController extends javax.swing.JFrame {
      */
     public MatchFormViewController() {
         initComponents();
+        
+        System.out.println(this.getClass().toString() + " created");
     }
 
     /**

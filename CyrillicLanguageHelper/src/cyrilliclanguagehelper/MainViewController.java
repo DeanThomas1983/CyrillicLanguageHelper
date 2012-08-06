@@ -22,7 +22,7 @@ public class MainViewController {
     
     public MainViewController()
     {
-        System.out.println("MainViewController created");
+        System.out.println(this.getClass().toString() + " created");
     }
 
     public MainViewController(DataModel dataModel) {

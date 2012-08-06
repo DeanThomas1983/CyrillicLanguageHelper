@@ -22,6 +22,8 @@ public class LetterFlashcardFormViewController extends javax.swing.JFrame {
      */
     public LetterFlashcardFormViewController() {
         initComponents();
+        
+        System.out.println(this.getClass().toString() + " created");
     }
 
     public LetterFlashcardFormViewController(DataModel dataModel)

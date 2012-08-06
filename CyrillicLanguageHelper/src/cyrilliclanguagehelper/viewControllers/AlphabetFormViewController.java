@@ -20,7 +20,7 @@ public class AlphabetFormViewController extends javax.swing.JFrame {
     public AlphabetFormViewController() {
         initComponents();
         
-        
+        System.out.println(this.getClass().toString() + " created");
     }
 
     public AlphabetFormViewController(DataModel dataModel)

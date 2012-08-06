@@ -18,6 +18,8 @@ public class LetterEditFormViewController extends javax.swing.JFrame {
     public LetterEditFormViewController() {
         initComponents();
         
+        System.out.println(this.getClass().toString() + " created");
+        
         populateEnglishComboBoxes();
         populateCyrillicComboBoxes();
     }
